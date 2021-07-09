@@ -157,7 +157,7 @@
   "followers": 500,
   "location": "Delhi",
   "phone": "+916505551234", // should contain +91,
-  "token": : "akJGIUSA28736248"
+  "token": "akJGIUSA28736248"
 }
 ```
 
