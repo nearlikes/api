@@ -157,7 +157,7 @@
   "followers": 500,
   "location": "Delhi",
   "phone": "+916505551234", // should contain +91,
-  "token": "akJGIUSA28736248"
+  "token": : "akJGIUSA28736248"
 }
 ```
 
@@ -203,7 +203,8 @@
     "followers": 500,
     "location": "Kolkata",
     "phone": "+916505551234",
-    "age": 20
+	"token" : "KJGDBCFJSB34875634",
+    "age": 20,
     "__v": 0
   }
 }
@@ -231,20 +232,22 @@
 
 ```json
 {
-	"customer": {
-		"associations": [
-			"60d20b46e882293924daa02c" //businesses whose stories were shared
-		],
-		"cashback": [], // amounts received as cashbacks
-		"createdAt": 1624378603,
-		"_id": "60d21590a28d9531b4d4d439",
-		"name": "John Doe",
-		"insta": "@johndoe",
-		"followers": 500,
-		"location": "Kolkata",
-		"phone": "+916505551234",
-		"__v": 0
-	}
+  "customer": {
+    "associations": [
+      "60d20b46e882293924daa02c" //businesses whose stories were shared
+    ],
+    "cashback": [], // amounts received as cashbacks
+    "createdAt": 1624378603,
+    "_id": "60d21590a28d9531b4d4d439",
+    "name": "John Doe",
+    "insta": "@johndoe",
+    "followers": 500,
+    "location": "Kolkata",
+    "phone": "+916505551234",
+	"token" : "KJGDBCFJSB34875634",
+    "age": 20,
+    "__v": 0
+  }
 }
 ```
 
@@ -407,6 +410,44 @@
 -   ALL are required parameters
 
 #### RESPONSE: 200 // if newly added or error is returned if present in database that can be ignored
+
+### ADD A STORY
+
+#### URL: /client/add/story
+
+#### STATUS: active
+
+#### METHOD: POST
+
+#### BODY:
+
+```json
+{
+	"id": "60c7be27edde3231c06a35a2",// campaign id
+	"user": "50c7be27edde3231c06a35a2", // insta_token
+	"story": ["60d20b46e882293924daa02c", "60d20b46e882293924daa02c"] // story id one or multiple
+}
+```
+#### RESPONSE: 200
+
+
+### UPDATE INSTAGRAM TOKEN
+
+#### URL: /client/add/token
+
+#### STATUS: active
+
+#### METHOD: POST
+
+#### BODY:
+
+```json
+{
+	"id": "60c7be27edde3231c06a35a2",// customer id
+	"token": "50c7be27edde3231c06a35a2", // insta_token
+}
+```
+#### RESPONSE: 200
 
 ## NOTE:
 
