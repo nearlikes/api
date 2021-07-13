@@ -203,7 +203,7 @@
     "followers": 500,
     "location": "Kolkata",
     "phone": "+916505551234",
-	"token" : "KJGDBCFJSB34875634",
+	  "token" : "KJGDBCFJSB34875634",
     "age": 20,
     "__v": 0
   }
@@ -244,7 +244,7 @@
     "followers": 500,
     "location": "Kolkata",
     "phone": "+916505551234",
-	"token" : "KJGDBCFJSB34875634",
+	  "token" : "KJGDBCFJSB34875634",
     "age": 20,
     "__v": 0
   }
@@ -327,7 +327,7 @@
 
 ```json
 {
-	"id": "60c7be27edde3231c06a35a2"
+	"id": "60c7be27edde3231c06a35a2" // the ownerId from the campaign object to get a specific businesses media
 }
 ```
 
@@ -425,7 +425,8 @@
 {
 	"id": "60c7be27edde3231c06a35a2",// campaign id
 	"user": "50c7be27edde3231c06a35a2", // insta_token
-	"story": ["60d20b46e882293924daa02c", "60d20b46e882293924daa02c"] // story id one or multiple
+	"story": ["60d20b46e882293924daa02c", "60d20b46e882293924daa02c"], // story id one or multiple
+  "ownerId": "60d20b46e882293924daa02c" //customers id
 }
 ```
 #### RESPONSE: 200
